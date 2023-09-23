@@ -130,13 +130,13 @@ class MainApp extends StatelessWidget {
                   ),
                   child: Stack(alignment: Alignment.bottomRight, children: [
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0, 0, 19, 14),
+                      padding: const EdgeInsets.fromLTRB(0, 0, 27, 17),
                       child: Image(
                         image: AssetImage(
-                          'lib/assets/Ellipse-1.png',
+                          'lib/assets/Mask-Group-2.png',
                         ),
-                        width: 179,
-                        height: 239,
+                        width: 100,
+                        height: 110,
                       ),
                     ),
                     Padding(

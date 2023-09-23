@@ -119,73 +119,73 @@ class MainApp extends StatelessWidget {
                     ]),
                   ),
                 ),
-                // Container(
-                //   width: 270,
-                //   height: 350,
-                //   decoration: BoxDecoration(
-                //     image: DecorationImage(
-                //       image: AssetImage('lib/assets/Rectangle-1.png'),
-                //       fit: BoxFit.cover,
-                //     ),
-                //   ),
-                //   child: Stack(alignment: Alignment.bottomRight, children: [
-                //     Padding(
-                //       padding: const EdgeInsets.fromLTRB(0, 0, 19, 14),
-                //       child: Image(
-                //         image: AssetImage(
-                //           'lib/assets/Mask-Group.png',
-                //         ),
-                //         width: 179,
-                //         height: 239,
-                //       ),
-                //     ),
-                //     Padding(
-                //       padding: const EdgeInsets.fromLTRB(0, 0, 26, 20),
-                //       child: Image(
-                //         image: AssetImage(
-                //           'lib/assets/Saly-10.png',
-                //         ),
-                //         width: 179,
-                //         height: 239,
-                //       ),
-                //     ),
-                //     Positioned(
-                //       top: 15,
-                //       left: 11,
-                //       child: Image(
-                //         image: AssetImage(
-                //           'lib/assets/Recommended.png',
-                //         ),
-                //       ),
-                //     ),
-                //     Positioned(
-                //       top: 80,
-                //       left: 28,
-                //       child: Text(
-                //         'UI/UX DESIGNER',
-                //         style: TextStyle(
-                //           fontSize: 25.0,
-                //           fontWeight: FontWeight.w500,
-                //           fontFamily: 'Roboto',
-                //           color: Colors.white,
-                //         ),
-                //       ),
-                //     ),
-                //     Positioned(
-                //       top: 110,
-                //       left: 28,
-                //       child: Text(
-                //         'BEGINNER',
-                //         style: TextStyle(
-                //           fontSize: 25.0,
-                //           fontWeight: FontWeight.w500,
-                //           fontFamily: 'Roboto',
-                //           color: Colors.white,
-                //         ),
-                //       ),
-                //     ),
-                //   ]),
-                // )
+                Container(
+                  width: 270,
+                  height: 350,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('lib/assets/Rectangle-2.png'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  child: Stack(alignment: Alignment.bottomRight, children: [
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 19, 14),
+                      child: Image(
+                        image: AssetImage(
+                          'lib/assets/Ellipse-1.png',
+                        ),
+                        width: 179,
+                        height: 239,
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 26, 20),
+                      child: Image(
+                        image: AssetImage(
+                          'lib/assets/Saly-36.png',
+                        ),
+                        width: 179,
+                        height: 239,
+                      ),
+                    ),
+                    Positioned(
+                      top: 15,
+                      left: 11,
+                      child: Image(
+                        image: AssetImage(
+                          'lib/assets/NewClass.png',
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 80,
+                      left: 28,
+                      child: Text(
+                        'GRAPHIC DESIGN',
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Roboto',
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      top: 110,
+                      left: 28,
+                      child: Text(
+                        'MASTER',
+                        style: TextStyle(
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: 'Roboto',
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ]),
+                ),
               ],
             ),
             Padding(

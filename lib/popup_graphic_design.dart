@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const PopupPage());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class PopupPage extends StatelessWidget {
+  const PopupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,59 +20,65 @@ class MainApp extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    Container(
-                      width: 416,
-                      height: 330,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(22),
-                          bottomRight: Radius.circular(22),
-                        ),
-                        gradient: LinearGradient(
-                          colors: [
-                            Color(0xFFF4C465),
-                            Color(0xFFC63956),
-                          ],
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                        ),
-                      ),
-                      child: Stack(alignment: Alignment.bottomRight, children: [
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(22),
-                          child: Container(
-                            width: 400,
-                            height: 400,
-                            child: Stack(
-                              alignment: Alignment.bottomRight,
-                              children: [
-                                Positioned(
-                                  right: -35,
-                                  bottom: -25,
-                                  child: Image(
-                                    image: AssetImage(
-                                      'lib/assets/big-Ellipse-blue.png',
-                                    ),
-                                    width: 250,
-                                    height: 230,
-                                  ),
-                                ),
-                                Positioned(
-                                  top: 25,
-                                  right: 15,
-                                  child: Image(
-                                    image: AssetImage(
-                                      'lib/assets/big-Saly-36.png',
-                                    ),
-                                    width: 300,
-                                    height: 320,
-                                  ),
-                                ),
-                              ],
-                            ),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Container(
+                        width: 416,
+                        height: 330,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(22),
+                            bottomRight: Radius.circular(22),
+                          ),
+                          gradient: LinearGradient(
+                            colors: [
+                              Color(0xFFF4C465),
+                              Color(0xFFC63956),
+                            ],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
                           ),
                         ),
-                      ]),
+                        child:
+                            Stack(alignment: Alignment.bottomRight, children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(22),
+                            child: Container(
+                              width: 400,
+                              height: 400,
+                              child: Stack(
+                                alignment: Alignment.bottomRight,
+                                children: [
+                                  Positioned(
+                                    right: -35,
+                                    bottom: -25,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/big-Ellipse-blue.png',
+                                      ),
+                                      width: 250,
+                                      height: 230,
+                                    ),
+                                  ),
+                                  Positioned(
+                                    top: 25,
+                                    right: 15,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/big-Saly-36.png',
+                                      ),
+                                      width: 300,
+                                      height: 320,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ]),
+                      ),
                     ),
                   ],
                 ),
@@ -184,87 +190,92 @@ class MainApp extends StatelessWidget {
                   padding: const EdgeInsets.fromLTRB(20, 0, 20, 1),
                   child: Row(
                     children: [
-                      Container(
-                        width: 374,
-                        height: 100,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              bottom: 0,
-                              child: Container(
-                                width: 375,
-                                height: 82,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF353567),
-                                  borderRadius: BorderRadius.circular(19),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Container(
+                          width: 374,
+                          height: 100,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                bottom: 0,
+                                child: Container(
+                                  width: 375,
+                                  height: 82,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF353567),
+                                    borderRadius: BorderRadius.circular(19),
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              bottom: 0,
-                              child: Container(
-                                width: 99,
-                                height: 82,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFFDB61A1),
-                                  borderRadius: BorderRadius.circular(19),
+                              Positioned(
+                                bottom: 0,
+                                child: Container(
+                                  width: 99,
+                                  height: 82,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFDB61A1),
+                                    borderRadius: BorderRadius.circular(19),
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              left: -20,
-                              top: -20,
-                              child: Image(
-                                image: AssetImage('lib/assets/Saly-20.png'),
-                              ),
-                            ),
-                            Positioned(
-                              top: 32,
-                              left: 110,
-                              child: Text(
-                                'Introduction Design Graphic',
-                                style: TextStyle(
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: 'Roboto',
-                                  color: Color.fromARGB(255, 255, 255, 255),
+                              Positioned(
+                                left: -20,
+                                top: -20,
+                                child: Image(
+                                  image: AssetImage('lib/assets/Saly-20.png'),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              top: 60,
-                              left: 109,
-                              child: Text(
-                                '12 Minutes',
-                                style: TextStyle(
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: 'Roboto',
-                                  color: Color(0xFF8C8C8C),
-                                ),
-                              ),
-                            ),
-                            Positioned(
-                              top: 60,
-                              left: 190,
-                              child: Container(
-                                padding: EdgeInsets.fromLTRB(10, 2, 10, 2),
-                                decoration: BoxDecoration(
-                                  color: Color(0xFFEB53A2),
-                                  borderRadius: BorderRadius.circular(50),
-                                ),
+                              Positioned(
+                                top: 32,
+                                left: 110,
                                 child: Text(
-                                  'Free',
+                                  'Introduction Design Graphic',
                                   style: TextStyle(
-                                    fontSize: 11.0,
-                                    fontWeight: FontWeight.normal,
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w500,
                                     fontFamily: 'Roboto',
                                     color: Color.fromARGB(255, 255, 255, 255),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                              Positioned(
+                                top: 60,
+                                left: 109,
+                                child: Text(
+                                  '12 Minutes',
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: 'Roboto',
+                                    color: Color(0xFF8C8C8C),
+                                  ),
+                                ),
+                              ),
+                              Positioned(
+                                top: 60,
+                                left: 190,
+                                child: Container(
+                                  padding: EdgeInsets.fromLTRB(10, 2, 10, 2),
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFEB53A2),
+                                    borderRadius: BorderRadius.circular(50),
+                                  ),
+                                  child: Text(
+                                    'Free',
+                                    style: TextStyle(
+                                      fontSize: 11.0,
+                                      fontWeight: FontWeight.normal,
+                                      fontFamily: 'Roboto',
+                                      color: Color.fromARGB(255, 255, 255, 255),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],

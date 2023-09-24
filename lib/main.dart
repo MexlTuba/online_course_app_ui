@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 
@@ -32,7 +32,7 @@ class MainApp extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 20),
+                  padding: EdgeInsets.fromLTRB(20, 0, 0, 10),
                   child: Text(
                     'Master Class',
                     style: TextStyle(
@@ -50,40 +50,55 @@ class MainApp extends StatelessWidget {
               child: Row(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 5),
+                    padding: const EdgeInsets.only(left: 20),
                     child: Container(
-                      width: 270,
-                      height: 350,
+                      width: 230,
+                      height: 335,
                       decoration: BoxDecoration(
-                        image: DecorationImage(
-                          image: AssetImage('lib/assets/Rectangle-1.png'),
-                          fit: BoxFit.cover,
+                        borderRadius: BorderRadius.circular(22),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color(0xFF9288E4),
+                            Color(0xFF534EA7),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
                         ),
                       ),
-                      child: Stack(alignment: Alignment.bottomRight, children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 0, 19, 14),
-                          child: Image(
-                            image: AssetImage(
-                              'lib/assets/Mask-Group.png',
+                      child: Stack(children: [
+                        Positioned(
+                          top: 70,
+                          right: -1,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(22),
+                            child: Container(
+                              width: 250,
+                              height: 267,
+                              child: Stack(
+                                alignment: Alignment.bottomRight,
+                                children: [
+                                  Positioned(
+                                    right: -55,
+                                    top: 115,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/Ellipse-1.png',
+                                      ),
+                                    ),
+                                  ),
+                                  Image(
+                                    image: AssetImage(
+                                      'lib/assets/Saly-10.png',
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
-                            width: 179,
-                            height: 239,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(0, 0, 26, 20),
-                          child: Image(
-                            image: AssetImage(
-                              'lib/assets/Saly-10.png',
-                            ),
-                            width: 179,
-                            height: 239,
                           ),
                         ),
                         Positioned(
-                          top: 25,
-                          left: 28,
+                          top: 14,
+                          left: 10,
                           child: Container(
                               padding: EdgeInsets.all(10),
                               decoration: BoxDecoration(
@@ -101,270 +116,336 @@ class MainApp extends StatelessWidget {
                               )),
                         ),
                         Positioned(
-                          top: 80,
-                          left: 28,
-                          child: Text(
-                            'UI/UX DESIGNER',
-                            style: TextStyle(
-                              fontSize: 25.0,
-                              fontWeight: FontWeight.w500,
-                              fontFamily: 'Roboto',
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                        Positioned(
-                          top: 110,
-                          left: 28,
-                          child: Text(
-                            'BEGINNER',
-                            style: TextStyle(
-                              fontSize: 25.0,
-                              fontWeight: FontWeight.w500,
-                              fontFamily: 'Roboto',
-                              color: Colors.white,
-                            ),
+                          top: 65,
+                          left: 12,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'UI/UX DESIGNER',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                'BEGINNER',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ]),
                     ),
                   ),
-                  Container(
-                    width: 270,
-                    height: 350,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('lib/assets/Rectangle-2.png'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: Stack(alignment: Alignment.bottomRight, children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 22, 17),
-                        child: Image(
-                          image: AssetImage(
-                            'lib/assets/Mask-Group-2.png',
-                          ),
-                          width: 179,
-                          height: 239,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Container(
+                      width: 230,
+                      height: 335,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(22),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color(0xFFF4C465),
+                            Color(0xFFC63956),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 150, 5, 0),
-                        child: Image(
-                          image: AssetImage(
-                            'lib/assets/Saly-36.png',
-                          ),
-                          width: 179,
-                          height: 239,
-                        ),
-                      ),
-                      Positioned(
-                        top: 25,
-                        left: 28,
-                        child: Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Color(0xFFF4C67A),
-                              borderRadius: BorderRadius.circular(50),
-                            ),
-                            child: Text(
-                              'NEW CLASS',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w500,
-                                fontFamily: 'Roboto',
-                                color: Colors.white,
+                      child: Stack(children: [
+                        Positioned(
+                          top: 70,
+                          right: -1,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(22),
+                            child: Container(
+                              width: 250,
+                              height: 267,
+                              child: Stack(
+                                alignment: Alignment.bottomRight,
+                                children: [
+                                  Positioned(
+                                    right: -55,
+                                    top: 115,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/Ellipse-blue.png',
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    top: 25,
+                                    left: 30,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/Saly-36.png',
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            )),
-                      ),
-                      Positioned(
-                        top: 80,
-                        left: 28,
-                        child: Text(
-                          'GRAPHIC DESIGN',
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Roboto',
-                            color: Colors.white,
+                            ),
                           ),
                         ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 28,
-                        child: Text(
-                          'MASTER',
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Roboto',
-                            color: Colors.white,
+                        Positioned(
+                          top: 14,
+                          left: 10,
+                          child: Container(
+                              padding: EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Color(0xFFF4C67A),
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                              child: Text(
+                                'NEW CLASS',
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              )),
+                        ),
+                        Positioned(
+                          top: 65,
+                          left: 12,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'GRAPHIC DESIGN',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                'MASTER',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
-                  Container(
-                    width: 270,
-                    height: 350,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('lib/assets/Rectangle-1.png'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: Stack(alignment: Alignment.bottomRight, children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 19, 14),
-                        child: Image(
-                          image: AssetImage(
-                            'lib/assets/Mask-Group.png',
-                          ),
-                          width: 179,
-                          height: 239,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Container(
+                      width: 230,
+                      height: 335,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(22),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 136, 228, 147),
+                            Color.fromARGB(255, 152, 34, 122),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 26, 20),
-                        child: Image(
-                          image: AssetImage(
-                            'lib/assets/Saly-10.png',
-                          ),
-                          width: 179,
-                          height: 239,
-                        ),
-                      ),
-                      Positioned(
-                        top: 25,
-                        left: 28,
-                        child: Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Color(0xFFAFA8EE),
-                              borderRadius: BorderRadius.circular(50),
-                            ),
-                            child: Text(
-                              'Recommended',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w500,
-                                fontFamily: 'Roboto',
-                                color: Colors.white,
+                      child: Stack(children: [
+                        Positioned(
+                          top: 70,
+                          right: -1,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(22),
+                            child: Container(
+                              width: 250,
+                              height: 267,
+                              child: Stack(
+                                alignment: Alignment.bottomRight,
+                                children: [
+                                  Positioned(
+                                    right: -55,
+                                    top: 115,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/Ellipse-1.png',
+                                      ),
+                                    ),
+                                  ),
+                                  Image(
+                                    image: AssetImage(
+                                      'lib/assets/Saly-10.png',
+                                    ),
+                                  ),
+                                ],
                               ),
-                            )),
-                      ),
-                      Positioned(
-                        top: 80,
-                        left: 28,
-                        child: Text(
-                          'UI/UX DESIGNER',
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Roboto',
-                            color: Colors.white,
+                            ),
                           ),
                         ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 28,
-                        child: Text(
-                          'BEGINNER',
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Roboto',
-                            color: Colors.white,
+                        Positioned(
+                          top: 14,
+                          left: 10,
+                          child: Container(
+                              padding: EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 153, 224, 185),
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                              child: Text(
+                                'TRENDING',
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              )),
+                        ),
+                        Positioned(
+                          top: 65,
+                          left: 12,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'LAYOUTING',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                'INTERMEDIATE',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
-                  Container(
-                    width: 270,
-                    height: 350,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage('lib/assets/Rectangle-2.png'),
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    child: Stack(alignment: Alignment.bottomRight, children: [
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 0, 22, 17),
-                        child: Image(
-                          image: AssetImage(
-                            'lib/assets/Mask-Group-2.png',
-                          ),
-                          width: 179,
-                          height: 239,
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Container(
+                      width: 230,
+                      height: 335,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(22),
+                        gradient: LinearGradient(
+                          colors: [
+                            Color.fromARGB(255, 57, 73, 198),
+                            Color.fromARGB(255, 255, 251, 0),
+                          ],
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 150, 5, 0),
-                        child: Image(
-                          image: AssetImage(
-                            'lib/assets/Saly-36.png',
-                          ),
-                          width: 179,
-                          height: 239,
-                        ),
-                      ),
-                      Positioned(
-                        top: 25,
-                        left: 28,
-                        child: Container(
-                            padding: EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              color: Color(0xFFF4C67A),
-                              borderRadius: BorderRadius.circular(50),
-                            ),
-                            child: Text(
-                              'NEW CLASS',
-                              style: TextStyle(
-                                fontSize: 16.0,
-                                fontWeight: FontWeight.w500,
-                                fontFamily: 'Roboto',
-                                color: Colors.white,
+                      child: Stack(children: [
+                        Positioned(
+                          top: 70,
+                          right: -1,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(22),
+                            child: Container(
+                              width: 250,
+                              height: 267,
+                              child: Stack(
+                                alignment: Alignment.bottomRight,
+                                children: [
+                                  Positioned(
+                                    right: -55,
+                                    top: 115,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/Ellipse-blue.png',
+                                      ),
+                                    ),
+                                  ),
+                                  Positioned(
+                                    top: 25,
+                                    left: 30,
+                                    child: Image(
+                                      image: AssetImage(
+                                        'lib/assets/Saly-36.png',
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
-                            )),
-                      ),
-                      Positioned(
-                        top: 80,
-                        left: 28,
-                        child: Text(
-                          'GRAPHIC DESIGN',
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Roboto',
-                            color: Colors.white,
+                            ),
                           ),
                         ),
-                      ),
-                      Positioned(
-                        top: 110,
-                        left: 28,
-                        child: Text(
-                          'MASTER',
-                          style: TextStyle(
-                            fontSize: 25.0,
-                            fontWeight: FontWeight.w500,
-                            fontFamily: 'Roboto',
-                            color: Colors.white,
+                        Positioned(
+                          top: 14,
+                          left: 10,
+                          child: Container(
+                              padding: EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 134, 153, 225),
+                                borderRadius: BorderRadius.circular(50),
+                              ),
+                              child: Text(
+                                'REMASTERED',
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              )),
+                        ),
+                        Positioned(
+                          top: 65,
+                          left: 12,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'MATERIAL DESIGN',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                              Text(
+                                'BASICS',
+                                style: TextStyle(
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: 'Roboto',
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ),
-                    ]),
+                      ]),
+                    ),
                   ),
                 ],
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20),
+              padding: const EdgeInsets.fromLTRB(20, 20, 0, 20),
               child: Row(
                 children: [
                   Column(
@@ -379,16 +460,13 @@ class MainApp extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 20),
-                        child: Text(
-                          'From over 80 Lectures',
-                          style: TextStyle(
-                            fontSize: 14.0,
-                            fontWeight: FontWeight.normal,
-                            fontFamily: 'Roboto',
-                            color: Color(0xFF9C9A9A),
-                          ),
+                      Text(
+                        'From over 80 Lectures',
+                        style: TextStyle(
+                          fontSize: 14.0,
+                          fontWeight: FontWeight.normal,
+                          fontFamily: 'Roboto',
+                          color: Color(0xFF9C9A9A),
                         ),
                       )
                     ],
@@ -571,7 +649,7 @@ class MainApp extends StatelessWidget {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Flutter Developer',
+                                            'Full Stack Javascript',
                                             style: TextStyle(
                                               fontSize: 18.0,
                                               fontWeight: FontWeight.w500,
@@ -581,7 +659,7 @@ class MainApp extends StatelessWidget {
                                             ),
                                           ),
                                           Text(
-                                            '8 Hours',
+                                            '6 Hours',
                                             style: TextStyle(
                                               fontSize: 12.0,
                                               fontWeight: FontWeight.normal,
@@ -777,7 +855,7 @@ class MainApp extends StatelessWidget {
                                             CrossAxisAlignment.start,
                                         children: [
                                           Text(
-                                            'Flutter Developer',
+                                            'FullStack JavaScript',
                                             style: TextStyle(
                                               fontSize: 18.0,
                                               fontWeight: FontWeight.w500,
@@ -787,7 +865,7 @@ class MainApp extends StatelessWidget {
                                             ),
                                           ),
                                           Text(
-                                            '8 Hours',
+                                            '6 Hours',
                                             style: TextStyle(
                                               fontSize: 12.0,
                                               fontWeight: FontWeight.normal,
@@ -817,7 +895,8 @@ class MainApp extends StatelessWidget {
                           ],
                         ),
                       );
-                  } //SWITCH CASE
+                  }
+                  return null; //SWITCH CASE
                 },
               ),
             ),

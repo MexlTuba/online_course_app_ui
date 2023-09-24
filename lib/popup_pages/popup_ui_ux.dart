@@ -3,11 +3,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const PopupPage());
+  runApp(const PopupUiUx());
 }
 
-class PopupPage extends StatelessWidget {
-  const PopupPage({super.key});
+class PopupUiUx extends StatelessWidget {
+  const PopupUiUx({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,8 +34,8 @@ class PopupPage extends StatelessWidget {
                           ),
                           gradient: LinearGradient(
                             colors: [
-                              Color(0xFFF4C465),
-                              Color(0xFFC63956),
+                              Color(0xFF9288E4),
+                              Color(0xFF534EA7),
                             ],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
@@ -52,22 +52,22 @@ class PopupPage extends StatelessWidget {
                                 alignment: Alignment.bottomRight,
                                 children: [
                                   Positioned(
-                                    right: -35,
-                                    bottom: -25,
+                                    right: -65,
+                                    bottom: -45,
                                     child: Image(
                                       image: AssetImage(
-                                        'lib/assets/big-Ellipse-blue.png',
+                                        'lib/assets/Ellipse-1.png',
                                       ),
                                       width: 250,
                                       height: 230,
                                     ),
                                   ),
                                   Positioned(
-                                    top: 25,
-                                    right: 15,
+                                    top: 30,
+                                    right: -35,
                                     child: Image(
                                       image: AssetImage(
-                                        'lib/assets/big-Saly-36.png',
+                                        'lib/assets/Saly-10.png',
                                       ),
                                       width: 300,
                                       height: 320,
@@ -98,7 +98,7 @@ class PopupPage extends StatelessWidget {
                           ),
                           SizedBox(height: 10),
                           Text(
-                            'Graphic Design Master',
+                            'UI/UX DESIGNER BEGINNER',
                             style: TextStyle(
                               fontSize: 25.0,
                               fontWeight: FontWeight.w500,
@@ -121,14 +121,14 @@ class PopupPage extends StatelessWidget {
                           children: [
                             Image(
                               image: AssetImage(
-                                'lib/assets/icon1.png',
+                                'lib/assets/icon2.png',
                               ),
                             ),
                             Positioned(
                               left: 25,
                               child: Image(
                                 image: AssetImage(
-                                  'lib/assets/icon2.png',
+                                  'lib/assets/icon4.png',
                                 ),
                               ),
                             ),
@@ -144,7 +144,7 @@ class PopupPage extends StatelessWidget {
                               left: 75,
                               child: Image(
                                 image: AssetImage(
-                                  'lib/assets/icon4.png',
+                                  'lib/assets/icon1.png',
                                 ),
                               ),
                             ),
@@ -154,7 +154,7 @@ class PopupPage extends StatelessWidget {
                       Column(
                         children: [
                           Text(
-                            '+28K Members',
+                            '+162K Members',
                             style: TextStyle(
                               fontSize: 18.0,
                               fontWeight: FontWeight.normal,
@@ -165,7 +165,7 @@ class PopupPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(
-                        width: 65,
+                        width: 60,
                       ),
                       Column(
                         children: [
@@ -186,15 +186,15 @@ class PopupPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 1),
-                  child: Row(
-                    children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.pop(context);
-                        },
-                        child: Container(
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 1),
+                    child: Row(
+                      children: [
+                        Container(
                           width: 374,
                           height: 100,
                           child: Stack(
@@ -277,148 +277,158 @@ class PopupPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 1),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 374,
-                        height: 100,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              bottom: 0,
-                              child: Container(
-                                width: 375,
-                                height: 82,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(19),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 1),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 374,
+                          height: 100,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                bottom: 0,
+                                child: Container(
+                                  width: 375,
+                                  height: 82,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(19),
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              bottom: 0,
-                              child: Container(
-                                width: 99,
-                                height: 82,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFFF4C465),
-                                  borderRadius: BorderRadius.circular(19),
+                              Positioned(
+                                bottom: 0,
+                                child: Container(
+                                  width: 99,
+                                  height: 82,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFFF4C465),
+                                    borderRadius: BorderRadius.circular(19),
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              left: -13,
-                              top: 0,
-                              child: Image(
-                                image: AssetImage('lib/assets/Saly-21.png'),
-                              ),
-                            ),
-                            Positioned(
-                              top: 38,
-                              left: 110,
-                              child: Text(
-                                'Fundamental of Design',
-                                style: TextStyle(
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: 'Roboto',
-                                  color: Color.fromARGB(255, 255, 255, 255),
+                              Positioned(
+                                left: -13,
+                                top: 0,
+                                child: Image(
+                                  image: AssetImage('lib/assets/Saly-21.png'),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              top: 65,
-                              left: 109,
-                              child: Text(
-                                '16 Minutes',
-                                style: TextStyle(
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: 'Roboto',
-                                  color: Color(0xFF8C8C8C),
+                              Positioned(
+                                top: 38,
+                                left: 110,
+                                child: Text(
+                                  'Fundamental of Design',
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w500,
+                                    fontFamily: 'Roboto',
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                              Positioned(
+                                top: 65,
+                                left: 109,
+                                child: Text(
+                                  '16 Minutes',
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: 'Roboto',
+                                    color: Color(0xFF8C8C8C),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 1),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 374,
-                        height: 100,
-                        child: Stack(
-                          children: [
-                            Positioned(
-                              bottom: 0,
-                              child: Container(
-                                width: 375,
-                                height: 82,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(19),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 1),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 374,
+                          height: 100,
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                bottom: 0,
+                                child: Container(
+                                  width: 375,
+                                  height: 82,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(19),
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              bottom: 0,
-                              child: Container(
-                                width: 99,
-                                height: 82,
-                                decoration: BoxDecoration(
-                                  color: Color(0xFF326AA5),
-                                  borderRadius: BorderRadius.circular(19),
+                              Positioned(
+                                bottom: 0,
+                                child: Container(
+                                  width: 99,
+                                  height: 82,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xFF326AA5),
+                                    borderRadius: BorderRadius.circular(19),
+                                  ),
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              left: -4,
-                              top: 30,
-                              child: Image(
-                                image: AssetImage('lib/assets/Saly-25.png'),
-                                width: 110,
-                                height: 60,
-                              ),
-                            ),
-                            Positioned(
-                              top: 38,
-                              left: 110,
-                              child: Text(
-                                'Layout Design',
-                                style: TextStyle(
-                                  fontSize: 18.0,
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: 'Roboto',
-                                  color: Color.fromARGB(255, 255, 255, 255),
+                              Positioned(
+                                left: -4,
+                                top: 30,
+                                child: Image(
+                                  image: AssetImage('lib/assets/Saly-25.png'),
+                                  width: 110,
+                                  height: 60,
                                 ),
                               ),
-                            ),
-                            Positioned(
-                              top: 65,
-                              left: 109,
-                              child: Text(
-                                '10 Minutes',
-                                style: TextStyle(
-                                  fontSize: 14.0,
-                                  fontWeight: FontWeight.normal,
-                                  fontFamily: 'Roboto',
-                                  color: Color(0xFF8C8C8C),
+                              Positioned(
+                                top: 38,
+                                left: 110,
+                                child: Text(
+                                  'Layout Design',
+                                  style: TextStyle(
+                                    fontSize: 18.0,
+                                    fontWeight: FontWeight.w500,
+                                    fontFamily: 'Roboto',
+                                    color: Color.fromARGB(255, 255, 255, 255),
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                              Positioned(
+                                top: 65,
+                                left: 109,
+                                child: Text(
+                                  '10 Minutes',
+                                  style: TextStyle(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.normal,
+                                    fontFamily: 'Roboto',
+                                    color: Color(0xFF8C8C8C),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ],

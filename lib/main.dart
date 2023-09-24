@@ -9,7 +9,7 @@ import 'package:online_course_app_ui/home_free_cards/first_flutter_dev.dart';
 import 'package:online_course_app_ui/home_free_cards/fourth_css_god.dart';
 import 'package:online_course_app_ui/home_free_cards/second_fullstack_java.dart';
 import 'package:online_course_app_ui/home_free_cards/third_bootstrap_engineer.dart';
-import 'package:online_course_app_ui/popup_graphic_design.dart';
+import 'package:online_course_app_ui/popup_pages/popup_graphic_design.dart';
 
 void main() {
   runApp(const MainApp());

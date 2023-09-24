@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:online_course_app_ui/popup_graphic_design.dart';
+import 'package:online_course_app_ui/popup_pages/popup_graphic_design.dart';
 
 class Material_Design extends StatelessWidget {
   const Material_Design({

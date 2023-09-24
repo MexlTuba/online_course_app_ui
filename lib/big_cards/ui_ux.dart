@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:online_course_app_ui/popup_graphic_design.dart';
-import 'package:online_course_app_ui/popup_ui_ux.dart';
+import 'package:online_course_app_ui/popup_pages/popup_ui_ux.dart';
 
 class UI_UX extends StatelessWidget {
   const UI_UX({
